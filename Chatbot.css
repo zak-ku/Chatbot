@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+  font-family: "Poppins", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://art.pixilart.com/8b6698a852323f3.gif'); 
+  background-size: cover;
+}
+
+/* Main Chat Container */
+.chat-container {
+  background: #ffffff;
+  width: 800px;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Header */
+.chat-container h2 {
+  text-align: center;
+  color: #3f2b96;
+  margin-bottom: 10px;
+}
+
+/* Chat Messages Box */
+.chat-box {
+  height: 500px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f9f9ff;
+  margin-bottom: 10px;
+}
+
+/* Chat Messages */
+.message {
+  margin: 8px 0;
+  display: flex;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.bot {
+  justify-content: flex-start;
+}
+
+/* Chat Bubbles */
+.user span, .bot span {
+  padding: 8px 12px;
+  border-radius: 18px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.user span {
+  background: #3f2b96;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.bot span {
+  background: #e0e0ff;
+  color: #333;
+  border-bottom-left-radius: 4px;
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #3f2b96;
+  box-shadow: 0 0 5px rgba(63, 43, 150, 0.3);
+}
+
+/* Send Button */
+button {
+  padding: 8px 16px;
+  background: #3f2b96;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2a1b80;
+}
